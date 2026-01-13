@@ -3,64 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inca Digital | Digital Asset Intelligence</title>
-    <!-- خطوط تقنية وعصرية -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Game.js.cool | Awesome JS Games</title>
+    <!-- Google Fonts: Bungee for Gaming style -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --inca-blue: #00d4ff; --inca-dark: #020617; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--inca-dark); color: #e2e8f0; }
-        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
-        .cyber-gradient {
-            background: radial-gradient(circle at top right, rgba(0, 212, 255, 0.15), transparent),
-                        radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.15), transparent);
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0c;
+            color: #ffffff;
+            overflow-x: hidden;
         }
-        .glow-text { text-shadow: 0 0 15px rgba(0, 212, 255, 0.5); }
+        .gaming-font { font-family: 'Bungee', cursive; }
+        
+        /* Animated Background */
+        .bg-grid {
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
     </style>
 </head>
-<body class="flex flex-col min-h-screen cyber-gradient">
+<body class="bg-grid">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
-            <a href="/" class="text-2xl font-bold tracking-tighter flex items-center">
-                <span class="text-white">INCA</span><span class="text-[#00d4ff] glow-text ml-1">DIGITAL</span>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+            <a href="/" class="text-xl font-bold tracking-tighter gaming-font flex items-center gap-2">
+                <span class="text-pink-500">GAME</span><span class="text-cyan-400">.JS</span><span class="text-white">.COOL</span>
             </a>
-            <div class="hidden md:flex space-x-10 text-xs uppercase tracking-[0.2em] font-semibold">
-                <a href="/" class="text-[#00d4ff]">Home</a>
-                <a href="/solutions/" class="hover:text-[#00d4ff] transition">Solutions</a>
-                <a href="/data/" class="hover:text-[#00d4ff] transition">Intelligence</a>
+            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-bold">
+                <a href="/" class="text-pink-500">Home</a>
+                <a href="/arcade/" class="hover:text-cyan-400 transition">Arcade</a>
+                <a href="/engine/" class="hover:text-cyan-400 transition">The Engine</a>
+                <a href="/community/" class="hover:text-cyan-400 transition">Community</a>
             </div>
-            <a href="#" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded text-xs font-bold transition">LOGIN</a>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-gamepad text-cyan-400 animate-pulse"></i>
+                <span class="text-[10px] bg-white/10 px-2 py-1 rounded border border-white/20">v2.0.4</span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="h-screen flex items-center justify-center text-center px-6">
-        <div class="max-w-5xl">
-            <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-xs font-bold mb-6 bg-blue-500/5">
-                NEXT-GEN DATA ANALYTICS
+    <main class="relative pt-32 pb-20 px-6 min-h-screen flex flex-col items-center justify-center text-center">
+        <!-- Floating Elements for decoration -->
+        <div class="absolute top-40 left-10 text-pink-500/20 text-9xl floating" style="animation-delay: 0s;"><i class="fa-solid fa-ghost"></i></div>
+        <div class="absolute bottom-20 right-10 text-cyan-500/20 text-9xl floating" style="animation-delay: 1s;"><i class="fa-solid fa-rocket"></i></div>
+
+        <div class="relative z-10">
+            <div class="inline-block px-4 py-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full text-[10px] font-black tracking-widest mb-6 uppercase">
+                Ready Player One
             </div>
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
-                Master the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Digital Asset</span> Landscape
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-none gaming-font">
+                PLAY <span class="text-transparent bg-clip-text bg-gradient-to-b from-cyan-400 to-blue-600">SMOOTH</span><br>
+                BUILD <span class="text-transparent bg-clip-text bg-gradient-to-b from-pink-500 to-rose-700">FAST</span>
             </h1>
-            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
-                Providing sophisticated data analytics and market intelligence for global financial institutions and regulators.
+            <p class="text-slate-400 max-w-xl mx-auto mb-10 text-sm md:text-base font-medium">
+                The ultimate destination for lightweight, high-performance JavaScript games. Play instantly in your browser or learn to build your own.
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="/solutions/" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold transition flex items-center justify-center">
-                    Explore Solutions <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="/arcade/" class="bg-cyan-500 hover:bg-cyan-400 text-black px-10 py-4 rounded-xl font-black gaming-font transition-all transform hover:scale-105 neon-glow">
+                    START PLAYING
                 </a>
-                <a href="/data/" class="bg-slate-800 hover:bg-slate-700 text-white px-10 py-4 rounded-lg font-bold transition">
-                    View Intelligence
+                <a href="/engine/" class="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-10 py-4 rounded-xl font-black gaming-font transition-all">
+                    DEVELOPER DOCS
                 </a>
             </div>
         </div>
-    </header>
 
-    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-center text-slate-600">
-        <p class="text-sm">© 2026 Inca Digital. All rights reserved.</p>
+        <!-- Quick Stats -->
+        <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/5 pt-10 w-full max-w-5xl">
+            <div>
+                <div class="text-2xl font-bold gaming-font text-white">500+</div>
+                <div class="text-[10px] uppercase text-slate-500 tracking-widest mt-1">Free Games</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold gaming-font text-white">10M</div>
+                <div class="text-[10px] uppercase text-slate-500 tracking-widest mt-1">Monthly Plays</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold gaming-font text-white">0.5ms</div>
+                <div class="text-[10px] uppercase text-slate-500 tracking-widest mt-1">Engine Latency</div>
+            </div>
+            <div>
+                <div class="text-2xl font-bold gaming-font text-white">100%</div>
+                <div class="text-[10px] uppercase text-slate-500 tracking-widest mt-1">Open Source</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-black/50 border-t border-white/5 text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="#" class="text-slate-500 hover:text-white transition"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" class="text-slate-500 hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="text-slate-500 hover:text-white transition"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p class="text-[10px] text-slate-600 uppercase tracking-widest">© 2026 GAME.JS.COOL - NO INSTALLS, JUST CODE.</p>
     </footer>
 
 </body>
