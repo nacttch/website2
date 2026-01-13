@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inca Digital | Digital Asset Intelligence</title>
+    <!-- خطوط تقنية وعصرية -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --inca-blue: #00d4ff; --inca-dark: #020617; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--inca-dark); color: #e2e8f0; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+        .cyber-gradient {
+            background: radial-gradient(circle at top right, rgba(0, 212, 255, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.15), transparent);
+        }
+        .glow-text { text-shadow: 0 0 15px rgba(0, 212, 255, 0.5); }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen cyber-gradient">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
+            <a href="/" class="text-2xl font-bold tracking-tighter flex items-center">
+                <span class="text-white">INCA</span><span class="text-[#00d4ff] glow-text ml-1">DIGITAL</span>
+            </a>
+            <div class="hidden md:flex space-x-10 text-xs uppercase tracking-[0.2em] font-semibold">
+                <a href="/" class="text-[#00d4ff]">Home</a>
+                <a href="/solutions/" class="hover:text-[#00d4ff] transition">Solutions</a>
+                <a href="/data/" class="hover:text-[#00d4ff] transition">Intelligence</a>
+            </div>
+            <a href="#" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded text-xs font-bold transition">LOGIN</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-screen flex items-center justify-center text-center px-6">
+        <div class="max-w-5xl">
+            <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-xs font-bold mb-6 bg-blue-500/5">
+                NEXT-GEN DATA ANALYTICS
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+                Master the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Digital Asset</span> Landscape
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
+                Providing sophisticated data analytics and market intelligence for global financial institutions and regulators.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="/solutions/" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold transition flex items-center justify-center">
+                    Explore Solutions <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+                <a href="/data/" class="bg-slate-800 hover:bg-slate-700 text-white px-10 py-4 rounded-lg font-bold transition">
+                    View Intelligence
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-center text-slate-600">
+        <p class="text-sm">© 2026 Inca Digital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
