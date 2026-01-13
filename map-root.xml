@@ -20,4 +20,9 @@
     <loc>https://game.js.cool/map-extra.xml</loc>
     <lastmod>2026-01-13</lastmod>
   </sitemap>
+
+  <sitemap>
+    <loc>https://game.js.cool/map-extra4.xml</loc>
+    <lastmod>2026-01-13</lastmod>
+  </sitemap>
 </sitemapindex>
